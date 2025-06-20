@@ -14,3 +14,5 @@ jobs:
       with:
         repository: ayselersoz/actions-terraform
         
+    - run: ls
+        
