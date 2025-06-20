@@ -11,6 +11,8 @@ jobs:
     steps:
     - name: Checkout SCM
       uses: actions/checkout@v4
+      with:
+        repository: ayselersoz/actions-terraform
 
     - name: Download Terraform
       uses: hashicorp/setup-terraform@v3
