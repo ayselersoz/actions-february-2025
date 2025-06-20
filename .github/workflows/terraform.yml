@@ -11,3 +11,6 @@ jobs:
     steps:
     - name: Checkout SCM
       uses: actions/checkout@v4   
+
+    - name: Terraform init
+      run: terraform init  
