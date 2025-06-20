@@ -59,8 +59,8 @@ jobs:
 
 
     - name: Terraform Init
-      run: terraform init
-
+      run: terraform init -backend-config="key=${{ inputs.region }}/terraform.tfstate"
+      
     - name: Terraform Plan
       run: terraform plan
 
